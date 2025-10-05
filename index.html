@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pull Request Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .instructions {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .instructions h2 {
+            color: #6e48aa;
+            margin-bottom: 1rem;
+        }
+        
+        .instructions ol {
+            margin-left: 1.5rem;
+        }
+        
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .code {
+            background-color: #f8f8f8;
+            border-left: 4px solid #6e48aa;
+            padding: 1rem;
+            font-family: monospace;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .developers {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .developer-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .developer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .developer-card h3 {
+            color: #6e48aa;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .placeholder {
+            color: #888;
+            font-style: italic;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            background-color: #333;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .developers {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GitHub Pull Request Practice</h1>
+        <p class="subtitle">Team Collaboration Exercise</p>
+    </header>
+    
+    <div class="container">
+        <section class="instructions">
+            <h2>How to Contribute</h2>
+            <ol>
+                <li>Clone this repository to your local machine</li>
+                <li>Open the index.html file in a code editor</li>
+                <li>Find your section in the developers area below</li>
+                <li>Add some content to your section (text, images, links, etc.)</li>
+                <li>Commit your changes with a descriptive message</li>
+                <li>Push your changes to your forked repository</li>
+                <li>Create a pull request to the original repository</li>
+            </ol>
+            
+            <div class="code">
+                # Clone the repository<br>
+                git clone &lt;repository-url&gt;<br><br>
+                
+                # Create a new branch for your changes<br>
+                git checkout -b add-&lt;your-name&gt;-section<br><br>
+                
+                # After making changes, add and commit them<br>
+                git add .<br>
+                git commit -m "Add content to &lt;your-name&gt; section"<br><br>
+                
+                # Push to your fork and create a pull request<br>
+                git push origin add-&lt;your-name&gt;-section
+            </div>
+        </section>
+        
+        <section class="developers">
+            <!-- Ali Raza's Section -->
+            <div class="developer-card">
+                <h3>Ali Raza</h3>
+                <div class="placeholder">
+                    Add your content here! You can write about yourself, add images, links, or anything you'd like.
+                </div>
+            </div>
+            
+            <!-- Taimoor's Section -->
+            <div class="developer-card">
+                <h3>Taimoor</h3>
+                <div class="placeholder">
+                    Add your content here! You can write about yourself, add images, links, or anything you'd like.
+                </div>
+            </div>
+            
+            <!-- Abdul Saboor's Section -->
+            <div class="developer-card">
+                <h3>Abdul Saboor</h3>
+                <div class="placeholder">
+                    Add your content here! You can write about yourself, add images, links, or anything you'd like.
+                </div>
+            </div>
+            
+            <!-- Arsalan's Section -->
+            <div class="developer-card">
+                <h3>Arsalan</h3>
+                <div class="placeholder">
+                    Add your content here! You can write about yourself, add images, links, or anything you'd like.
+                </div>
+            </div>
+            
+            <!-- Hamad's Section -->
+            <div class="developer-card">
+                <h3>Hamad</h3>
+                <div class="placeholder">
+                    Add your content here! You can write about yourself, add images, links, or anything you'd like.
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>GitHub Pull Request Practice &copy; 2023</p>
+    </footer>
+</body>
+</html>
